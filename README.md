@@ -3,7 +3,7 @@ A pragmatic and scalable starter/seed project aimed at simple static HTML pages 
 
 # Purpose
 
-To start a new static HTML site or page one probably shouldn't need to go further than the good old proven [HTML5 Boilerplate](https://html5boilerplate.com).
+To start a new static HTML site or page one probably shouldn't need to go further than the good old proven and amazing [HTML5 Boilerplate](https://html5boilerplate.com).
 
 But with the latter consisting mostly of ready to use static files, it lacks as a basis for a working development workflow if one—given the modern web development requirements—needs to add stylesheets pre-processing, bundling, deployment, among others.
 
