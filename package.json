@@ -1,0 +1,15 @@
+{
+  "name": "html-base",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A pragmatic and scalable starter/seed project aimed at simple static HTML pages and sites.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrosanta/html-base.git"
+  },
+  "author": "Pedro Machado Santa <pedro.santa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "html5-boilerplate": "^7.2.0"
+  }
+}
