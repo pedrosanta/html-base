@@ -2,7 +2,7 @@
 
 A pragmatic and scalable starter/seed project aimed at simple static HTML pages and sites.
 
-## Contents
+**Contents:**
 
 - [Purpose](#purpose)
   * [Folder structure](#folder-structure)
