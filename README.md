@@ -7,7 +7,7 @@ To start a new static HTML site or page one probably shouldn't need to go furthe
 
 But with the latter consisting mostly of ready to use static files, it lacks as a basis for a working development workflow, which, given the modern web development requirements, one might sometimes need to add CSS pre-processing, bundling, deployment, among others.
 
-This starter/seed project draws heavily from HTML5 Boilerplate, but adds a simple folder structure and a very lightweight base development workflow (based on [Gulp](https://gulpjs.com)) that allows for expansion to include aditional features and additional steps to a build pipeline.
+This starter/seed project draws heavily from HTML5 Boilerplate, but adds a simple folder structure and a very lightweight base development workflow (based on [Grunt](https://gruntjs.com)) that allows for expansion to include aditional features and additional steps to a build pipeline.
 
 With this starter/seed you will get:
 
