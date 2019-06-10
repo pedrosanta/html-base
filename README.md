@@ -1,6 +1,6 @@
 # html-base
 
-A pragmatic and scalable starter/seed project aimed at simple static HTML pages and sites.
+A pragmatic and scalable starter/seed project aimed mostly at simple static HTML pages and sites.
 
 **Contents:**
 

@@ -16,13 +16,16 @@ module.exports = grunt => {
       }
     },
     connect: {
-      server: {
+      options: {
+        base: '.tmp',
+        livereload: true,
+      },
+      dev: {
         options: {
-          base: '.tmp',
-          livereload: true,
           open: true
         }
-      }
+      },
+      server: {}
     },
     clean: ['.tmp', 'dist']
   });
@@ -35,9 +38,9 @@ module.exports = grunt => {
   grunt.registerTask('build:dist', ['copy:dist']);
   grunt.registerTask('build', ['build:dev', 'build:dist']);
 
-  grunt.registerTask('server', ['connect:server:keepalive']);
+  grunt.registerTask('dev', ['build:dev', 'connect:dev:keepalive']);
 
-  grunt.registerTask('dev', ['build:dev']);
+  grunt.registerTask('server', ['connect:server:keepalive']);
 
   grunt.registerTask('default', ['build']);
 };
