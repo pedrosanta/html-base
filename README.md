@@ -32,8 +32,8 @@ With this starter/seed you will get:
 ├── dist/
 ├── node_modules/
 ├── .editorconfig
-├── package.json
-└── Gruntfile.js
+├── Gruntfile.js
+└── package.json
 ```
 
 #### app/
