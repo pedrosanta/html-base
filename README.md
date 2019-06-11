@@ -25,7 +25,36 @@ With this starter/seed you will get:
 
 ## Folder structure
 
-(To finish.)
+```
+.
+├── .tmp/
+├── app/
+├── dist/
+├── node_modules/
+├── .editorconfig
+├── package.json
+└── Gruntfile.js
+```
+
+### app/
+
+Where all of your source files go.
+
+### dist/
+
+The folder of all the built files that can be pushed and served by a server in production.
+
+### .tmp/
+
+The folder of all the build files to be served by the local/dev built-in server.
+
+### .editorconfig
+
+[EditorConfig](https://editorconfig.org) file, to help maintain indentation consistency. ([Check the site](https://editorconfig.org/#download) to see how to enable on your code editor.)
+
+### Gruntfile.js
+
+[Grunt](https://gruntjs.com/) configuration file providing tasks for the development workflow—check the list of available tasks below.
 
 # Usage
 
