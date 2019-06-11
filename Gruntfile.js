@@ -17,30 +17,40 @@ module.exports = grunt => {
     },
     connect: {
       options: {
-        base: '.tmp',
-        livereload: true,
+        base: '.tmp'
       },
       dev: {
         options: {
+          livereload: true,
           open: true
         }
       },
       server: {}
+    },
+    watch: {
+      app: {
+        options: {
+          livereload: true
+        },
+        files: 'app/**',
+        tasks: ['build']
+      }
     },
     clean: ['.tmp', 'dist']
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('build:dev', ['copy:dev']);
-  grunt.registerTask('build:dist', ['copy:dist']);
-  grunt.registerTask('build', ['build:dev', 'build:dist']);
+  grunt.registerTask('build:dev', 'Build all the files needed for local/dev.', ['copy:dev']);
+  grunt.registerTask('build:dist', 'Build all the files needed for production.', ['copy:dist']);
+  grunt.registerTask('build', 'Build all the files needed for local/dev and production.', ['build:dev', 'build:dist']);
 
-  grunt.registerTask('dev', ['build:dev', 'connect:dev:keepalive']);
+  grunt.registerTask('dev', 'Development task for building files, launch a server and watch changes.', ['build:dev', 'connect:dev', 'watch']);
 
-  grunt.registerTask('server', ['connect:server:keepalive']);
+  grunt.registerTask('server', 'Run the server.', ['connect:server:keepalive']);
 
   grunt.registerTask('default', ['build']);
 };
