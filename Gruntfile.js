@@ -57,8 +57,8 @@ module.exports = grunt => {
 
 /*
  * Tasks:
- * grunt dev -> build:dev, server and watch
- * grunt watch
+ * OK grunt dev -> build:dev, server and watch
+ * OK grunt watch
  * OK grunt | grunt build
  * OK grunt build:dev
  * OK grunt build:dist
