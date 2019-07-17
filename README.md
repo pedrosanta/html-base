@@ -68,7 +68,11 @@ Install the development workflow dependencies with a `npm install` and use the f
 - `grunt`, `grunt:build` (default task) — Build all the files needed for local/dev and production.
   - `grunt build:dev` — Build all the files needed for local/dev.
   - `grunt build:dist` — Build all the files needed for production.
+
 - `grunt dev` — Development task for building files, launch a development server and watch changes. The development server injects the live reload script into the page through [connect-livereload / livereload option](https://github.com/gruntjs/grunt-contrib-connect#livereload), which is configured to work with the `watch` task.
+
 - `grunt watch` — Task that will watch changes and trigger the build pipeline, but doesn't launch the development server (useful if you're serving the files through another server).
+
 - `grunt server` — Run the development server but without watch nor live reload functionality (useful for a quick server launch).
+
 - `grunt clean` — Removes all built/generated files and directories (useful to use before a `grunt build` to force a clean build).
