@@ -61,7 +61,7 @@ The folder of all the build files to be served by the local/dev built-in server.
 
 Clone the repository and make sure to clean/delete the `.git` folder.
 
-Install the development workflow dependencies with a `npm install` and use the following tasks to build, run and deploy your project/site.
+Install the development workflow dependencies with a `npm install` and use the following tasks to build, develop and deploy your project/site.
 
 ## Grunt tasks
 
@@ -73,6 +73,6 @@ Install the development workflow dependencies with a `npm install` and use the f
 
 - `grunt watch` — Task that will watch changes and trigger the build pipeline, but doesn't launch the development server (useful if you're serving the files through another server).
 
-- `grunt server` — Run the development server but without watch nor live reload functionality (useful for a quick server launch).
+- `grunt server` — Run the development server but without watch nor live reload functionality (useful for a simple or quick server launch).
 
 - `grunt clean` — Removes all built/generated files and directories (useful to use before a `grunt build` to force a clean build).
