@@ -1,6 +1,7 @@
 module.exports = grunt => {
 
   grunt.initConfig({
+
     copy: {
       dev: {
         expand: true,
@@ -15,6 +16,7 @@ module.exports = grunt => {
         dest: 'dist/'
       }
     },
+
     connect: {
       options: {
         base: '.tmp'
@@ -27,6 +29,7 @@ module.exports = grunt => {
       },
       server: {}
     },
+
     watch: {
       app: {
         options: {
@@ -36,13 +39,47 @@ module.exports = grunt => {
         tasks: ['build']
       }
     },
-    clean: ['.tmp', 'dist']
+
+    clean: ['.tmp', 'dist'],
+
+    ftps_deploy: {
+      server: {
+        options: {
+          auth: {
+            host: '0.0.0.0',
+            port: 3000,
+            authKey: 'key1',
+            secure: true
+          }
+        },
+        files: [{
+          expand: true,
+          cwd: 'dist',
+          src: '**/*',
+          dest: '/home/user/public_html'
+        }]
+      }
+    },
+
+    'sftp-deploy': {
+      server: {
+        auth: {
+          host: 'server.com',
+          port: 22,
+          authKey: 'key1'
+        },
+        src: 'dist',
+        dest: '/home/user/public_html',
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-ftps-deploy');
+  grunt.loadNpmTasks('grunt-sftp-deploy');
 
   grunt.registerTask('build:dev', 'Build all the files needed for local/dev.', ['copy:dev']);
   grunt.registerTask('build:dist', 'Build all the files needed for production.', ['copy:dist']);
@@ -52,16 +89,7 @@ module.exports = grunt => {
 
   grunt.registerTask('server', 'Run the server.', ['connect:server:keepalive']);
 
+  grunt.registerTask('deploy', 'Deploy built code to the server.', ['build:dist', 'ftps_deploy']);
+
   grunt.registerTask('default', ['build']);
 };
-
-/*
- * Tasks:
- * OK grunt dev -> build:dev, server and watch
- * OK grunt watch
- * OK grunt | grunt build
- * OK grunt build:dev
- * OK grunt build:dist
- * grunt deploy -> grunt build:dist and deploy
- * OK grunt clean
- */

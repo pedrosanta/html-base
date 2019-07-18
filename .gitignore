@@ -120,5 +120,6 @@ typings/
 
 
 ### html-base ###
+.ftppass
 .tmp/
 dist/

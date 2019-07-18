@@ -76,3 +76,5 @@ Install the development workflow dependencies with a `npm install` and use the f
 - `grunt server` — Run the development server but without watch nor live reload functionality (useful for a simple or quick server launch).
 
 - `grunt clean` — Removes all built/generated files and directories (useful to use before a `grunt build` to force a clean build).
+
+- `grunt deploy` — Deploys the built code/site to a server using FTP/FTPS/SFTP. **Note:** FTP/FTPS and SFTP deployments are done through different Grunt tasks/dependencies ([grunt-ftps-deploy](https://github.com/dYb/grunt-ftps-deploy) and [grunt-sftp-deploy](https://github.com/thrashr888/grunt-sftp-deploy)), so you can adjust and remove one of them according to your needs/server connection. You'll also need to add a `.ftppass` file to your project for this, and to adjust the connection info, check the documentation of each task/dependency to see how you should do this.
