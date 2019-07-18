@@ -22,7 +22,7 @@ With this starter/seed you will get:
 
 - A modern template based on [HTML5 Boilerplate](https://html5boilerplate.com).
 - A sensible folder structure with a `dist` folder and a minimal build process, that clearly separates all the the config and dev workflow files, `npm_modules`/dependencies, etc, from the files that need to be deployed.
-- A deployment command/task that works through FTP/FTPS or SSH/SFTP.
+- A deployment command/task that works through FTP/FTPS or SFTP.
 - Configurable variables via [dotenv](https://github.com/motdotla/dotenv)/`.env` file.
 
 ## Folder structure
