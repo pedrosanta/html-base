@@ -77,6 +77,18 @@ Install the development workflow dependencies with a `npm install` and use the f
 - `grunt clean` — Removes all built/generated files and directories (useful to use before a `grunt build` to force a clean build).
 - `grunt deploy` — Deploys the built code/site to a server using FTP/FTPS/SFTP. **Note:** FTP/FTPS and SFTP deployments are done through different Grunt tasks/dependencies ([grunt-ftps-deploy](https://github.com/dYb/grunt-ftps-deploy) and [grunt-sftp-deploy](https://github.com/thrashr888/grunt-sftp-deploy)). You can adjust and remove/keep just one of them according to your needs/server connection. You'll also need to add a `.ftppass` file to your project, and to adjust the connection info. Check the documentation of each task/dependency to see how you can do this.
 
+# FAQ
+
+## Why use granny Grunt, and not Gulp, or Webpack, or NPM scripts, or the new and dope X?
+
+Because Grunt works. Really don't need the streams of Gulp. Webpack, I would like to not spend a couple days everytime I need to add/tweak something on the build pipeline. NPM scripts are interesting, but if you need something more advanced, it's hard, not worth the sweat. The famous X, I might consider moving to X if grunt plugins get too un-maintained, yes. Got me there!
+
+(Choose Boring Technology, 0.1x Engineer, etc)
+
+## This starter is stupid, it's lacking bundling / minification, transpiling / linting / cache invalidation / prefixing / Sass compilation / image/assets resize / CSS sprite sheets building / static generator / tests / ui framework / bash/zsh autocompletion / man page / woman page / ellen page / docker-compose / tmux session script / perl scripts / Makefile / X!
+
+It isn't. Keyword being lightweight and scalable build/dev pipeline. This serves as a base, so you can spend the next year setting up your tooling as you please to start your HTML static page/site. I might add X, though.
+
 # Contributing
 
 If you feel something can be improved in the spirit of this starter/seed project, feel free to open an Issue or submit a Pull Request for consideration.
