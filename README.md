@@ -8,6 +8,7 @@ A pragmatic and scalable starter/seed project aimed mostly at simple static HTML
   * [Folder structure](#folder-structure)
 - [Usage](#usage)
   * [Grunt tasks](#grunt-tasks)
+- [FAQ](#faq)
 - [Contributing](#contributing)
 
 # Purpose
