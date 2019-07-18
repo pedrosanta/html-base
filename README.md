@@ -78,3 +78,5 @@ Install the development workflow dependencies with a `npm install` and use the f
 # Contributing
 
 If you feel something can be improved in the spirit of this starter/seed project, feel free to open an Issue or submit a Pull Request.
+
+@pedrosanta
