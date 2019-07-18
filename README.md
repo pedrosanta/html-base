@@ -86,7 +86,7 @@ Because Grunt works. Really don't need the streams of Gulp. Webpack, I would lik
 
 (Choose Boring Technology, 0.1x Engineer, etc)
 
-## This starter is stupid, it's lacking bundling / minification, transpiling / linting / cache invalidation / prefixing / Sass compilation / image/assets resize / CSS sprite sheets building / static generator / tests / ui framework / bash/zsh autocompletion / man page / woman page / ellen page / docker-compose / tmux session script / perl scripts / Makefile / X!
+## This starter is stupid, it's lacking bundling / minification / transpiling / linting / cache invalidation / prefixing / Sass compilation / image/assets resize / CSS sprite sheets building / static generator / tests / ui framework / bash/zsh autocompletion / man page / woman page / ellen page / docker-compose / tmux session script / perl scripts / Makefile / bacon 🥓 / X!
 
 It isn't. Keyword being lightweight and scalable build/dev pipeline. This serves as a base, so you can spend the next year setting up your tooling as you please to start your HTML static page/site. I might add X, though.
 
