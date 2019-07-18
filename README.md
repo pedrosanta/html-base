@@ -8,6 +8,7 @@ A pragmatic and scalable starter/seed project aimed mostly at simple static HTML
   * [Folder structure](#folder-structure)
 - [Usage](#usage)
   * [Grunt tasks](#grunt-tasks)
+- [Contributing](#contributing)
 
 # Purpose
 
@@ -68,13 +69,12 @@ Install the development workflow dependencies with a `npm install` and use the f
 - `grunt`, `grunt:build` (default task) — Build all the files needed for local/dev and production.
   - `grunt build:dev` — Build all the files needed for local/dev.
   - `grunt build:dist` — Build all the files needed for production.
-
 - `grunt dev` — Development task for building files, launch a development server and watch changes. The development server injects the live reload script into the page through [connect-livereload / livereload option](https://github.com/gruntjs/grunt-contrib-connect#livereload), which is configured to work with the `watch` task.
-
 - `grunt watch` — Task that will watch changes and trigger the build pipeline, but doesn't launch the development server (useful if you're serving the files through another server).
-
 - `grunt server` — Run the development server but without watch nor live reload functionality (useful for a simple or quick server launch).
-
 - `grunt clean` — Removes all built/generated files and directories (useful to use before a `grunt build` to force a clean build).
-
 - `grunt deploy` — Deploys the built code/site to a server using FTP/FTPS/SFTP. **Note:** FTP/FTPS and SFTP deployments are done through different Grunt tasks/dependencies ([grunt-ftps-deploy](https://github.com/dYb/grunt-ftps-deploy) and [grunt-sftp-deploy](https://github.com/thrashr888/grunt-sftp-deploy)). You can adjust and remove/keep just one of them according to your needs/server connection. You'll also need to add a `.ftppass` file to your project, and to adjust the connection info. Check the documentation of each task/dependency to see how you can do this.
+
+# Contributing
+
+If you feel something can be improved in the spirit of this starter/seed project, feel free to open an Issue or submit a Pull Request.
