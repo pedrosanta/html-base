@@ -60,6 +60,8 @@ The folder of all the build files to be served by the local/dev built-in server.
 
 # Usage
 
+Make sure you have [Grunt/`grunt-cli` installed](https://gruntjs.com/getting-started#installing-the-cli).
+
 Clone the repository and make sure to clean/delete the `.git` folder.
 
 Install the development workflow dependencies with a `npm install` and use the following tasks to build, develop and deploy your project/site.
