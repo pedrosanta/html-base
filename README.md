@@ -44,7 +44,7 @@ Where all of your source files go.
 
 #### dist/
 
-The folder of all the built files that can be pushed and served by a server in production.
+The folder of all the built files that can be pushed and served by a remote/production server.
 
 #### .tmp/
 
