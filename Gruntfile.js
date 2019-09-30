@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = grunt => {
 
   grunt.initConfig({
@@ -13,6 +15,18 @@ module.exports = grunt => {
         expand: true,
         cwd: 'app/',
         src: '**',
+        dest: 'dist/'
+      }
+    },
+
+    'ga-replace': {
+      options: {
+        propertyId: process.env.GA_TRACKING_ID
+      },
+      dist: {
+        expand: true,
+        cwd: 'dist/',
+        src: '**/*.html',
         dest: 'dist/'
       }
     },
@@ -75,6 +89,7 @@ module.exports = grunt => {
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-ga-replace');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -82,7 +97,7 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-sftp-deploy');
 
   grunt.registerTask('build:dev', 'Build all the files needed for local/dev.', ['copy:dev']);
-  grunt.registerTask('build:dist', 'Build all the files needed for production.', ['copy:dist']);
+  grunt.registerTask('build:dist', 'Build all the files needed for production.', ['copy:dist', 'ga-replace:dist']);
   grunt.registerTask('build', 'Build all the files needed for local/dev and production.', ['build:dev', 'build:dist']);
 
   grunt.registerTask('dev', 'Development task for building files, launch a server and watch changes.', ['build:dev', 'connect:dev', 'watch']);
