@@ -12,24 +12,24 @@ A pragmatic starter/seed project for simple static HTML projects/pages/sites.
 
 # Purpose
 
-A starter/seed project drawing heavily from the good old proven [HTML5 Boilerplate](https://html5boilerplate.com) but pairing it with [Parcel](https://parceljs.org) for a quick HTML development setup, and aligned with current web development requirements.
+A starter/seed project drawing heavily from the good proven [HTML5 Boilerplate](https://html5boilerplate.com) and pairing it with [Parcel](https://parceljs.org) for a quick HTML development setup, aligned with current web development requirements.
 
 With this starter/seed you will get:
 
 - A modern HTML starter template based on [HTML5 Boilerplate](https://html5boilerplate.com).
+- Easy but robust dependency and asset bundling with [Parcel](https://parceljs.org).
 - A sensible folder structure with `src`/`dist` folders allowing for proper separation of all the the config, dev workflow files, `npm_modules`/dependencies, etc, and the built files that need to be deployed.
-- Parcel build optimization, etc.
+- Configurable variables via [Parcel support for dotenv/`.env` files](https://parceljs.org/features/node-emulation/#.env-files).
 - A deployment command/task that works through FTP/FTPS or SFTP.
-- Configurable variables via [dotenv](https://github.com/motdotla/dotenv)/`.env` file.
 
 ## Folder structure
 
 ```
 .
 ├── .tmp/
-├── app/
 ├── dist/
 ├── node_modules/
+├── src/
 ├── .editorconfig
 ├── .env.example
 ├── Gruntfile.js
