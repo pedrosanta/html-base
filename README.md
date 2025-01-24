@@ -37,11 +37,11 @@ With this starter/seed you will get:
 
 #### dist/
 
-The folder of all the built files that can be pushed and served by a remote/production server. (Note: This folder isn't git ignored, see more below.)
+The folder of all the built files that can be pushed and served by a remote/production server. (**Note:** This folder isn't git ignored, [see more below](#why-commit-the-dist-folder).)
 
 #### dist.dev/
 
-The folder of all the build files to be served by the local/Parcel development server. (Folder git ignored.)
+The folder of all the build files to be served by the local/Parcel development server. (Folder is git ignored.)
 
 #### src/
 
