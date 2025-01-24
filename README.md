@@ -26,26 +26,26 @@ With this starter/seed you will get:
 
 ```
 .
-├── .tmp/
+├── .parcel-cache/
 ├── dist/
+├── dist.dev/
 ├── node_modules/
 ├── src/
 ├── .editorconfig
-├── .env.example
 └── package.json
 ```
 
-#### app/
-
-Where all of your source files go.
-
 #### dist/
 
-The folder of all the built files that can be pushed and served by a remote/production server.
+The folder of all the built files that can be pushed and served by a remote/production server. (Note: This folder isn't git ignored, see more below.)
 
-#### .tmp/
+#### dist.dev/
 
-The folder of all the build files to be served by the local/dev built-in server.
+The folder of all the build files to be served by the local/Parcel development server. (Folder git ignored.)
+
+#### src/
+
+Where all of your source files go.
 
 #### .editorconfig
 
@@ -55,13 +55,13 @@ The folder of all the build files to be served by the local/dev built-in server.
 
 [dotenv](https://github.com/motdotla/dotenv) example file. Copy this file into a `.env` file and adjust the environment variables. (This is mostly an example usage of dotenv functionality to store and use environment variables on the build tasks/pipeline for you to expand, for now it only holds a Google Analytics variable.)
 
-#### Gruntfile.js
-
-[Grunt](https://gruntjs.com/) configuration file providing tasks for the development workflow—check the list of available tasks below.
-
 ## Why Parcel?
 
 Nowadays, HTML5 Boilerplate ships with a base [webpack](https://webpack.js.org/) configuration.
+
+## Why commit the dist folder?
+
+(Explain.)
 
 # Usage
 
