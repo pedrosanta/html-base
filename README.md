@@ -32,6 +32,7 @@ With this starter/seed you will get:
 ├── node_modules/
 ├── src/
 ├── .editorconfig
+├── .env
 └── package.json
 ```
 
@@ -51,7 +52,7 @@ Where all of your source files go.
 
 [EditorConfig](https://editorconfig.org) file, to help maintain indentation consistency. ([Check the site](https://editorconfig.org/#download) to see how to enable on your code editor.)
 
-#### .env.example
+#### .env
 
 [dotenv](https://github.com/motdotla/dotenv) example file. Copy this file into a `.env` file and adjust the environment variables. (This is mostly an example usage of dotenv functionality to store and use environment variables on the build tasks/pipeline for you to expand, for now it only holds a Google Analytics variable.)
 
