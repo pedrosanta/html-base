@@ -32,7 +32,6 @@ With this starter/seed you will get:
 ├── src/
 ├── .editorconfig
 ├── .env.example
-├── Gruntfile.js
 └── package.json
 ```
 
