@@ -54,11 +54,15 @@ Where all of your source files go.
 
 #### .env
 
-[dotenv](https://github.com/motdotla/dotenv) example file. Copy this file into a `.env` file and adjust the environment variables. (This is mostly an example usage of dotenv functionality to store and use environment variables on the build tasks/pipeline for you to expand, for now it only holds a Google Analytics variable.)
+The main/default [dotenv](https://github.com/motdotla/dotenv) file. See how you can leverage this file (and dotenv) with Parcel [on the documentation](https://parceljs.org/features/node-emulation/#.env-files). Add local/development git ignored overrides to an `.env.local` file or any other appropriate `env.*.local` files. (The `.env` file already includes variables needed for deployment that you should edit.) **Important note:** Avoid adding secret variables to this file/committing secret variables. At the very least, add them locally to `.env.local`/`.env.*.local` files or ideally have a better/established process to manage secrets.
 
 ## Why Parcel?
 
-Nowadays, HTML5 Boilerplate ships with a base [webpack](https://webpack.js.org/) configuration.
+Currently HTML5 Boilerplate ships with a base [webpack](https://webpack.js.org/) configuration that provides a development server, builds the code for development and production, but in terms of build pipeline still seems a bit too bare.
+
+I've been using Parcel lately with good results: it works out-of-thebox, it's fully featured for web development, and it's extendable if you need to tweak/modify some particular configuration on the build pipeline.
+
+This isn't set in stone though, the simplicity of the current webpack configuration of HTML5 Boilerplate it's also a plus for a more bare starter, and [Vite](https://vitejs.dev) seems also like a great option for this. For now, I'm sticking to Parcel unless I see the benefit of revisiting this or if I face significant hurdles using Parcel later on.
 
 ## Why commit the dist folder?
 
