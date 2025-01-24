@@ -1,6 +1,6 @@
 # html-base
 
-A pragmatic and scalable starter/seed project aimed mostly at simple static HTML pages and sites.
+A pragmatic starter/seed project for simple static HTML projects/pages/sites.
 
 **Contents:**
 
@@ -12,16 +12,13 @@ A pragmatic and scalable starter/seed project aimed mostly at simple static HTML
 
 # Purpose
 
-To start a new static HTML site or page one probably shouldn't need to go further than the good old proven and amazing [HTML5 Boilerplate](https://html5boilerplate.com).
-
-But with the latter consisting mostly of ready to use static files, it lacks as a basis for a working development workflow, which, given the modern web development requirements, one might sometimes need to add CSS pre-processing, bundling, deployment, among others.
-
-This starter/seed project draws heavily from HTML5 Boilerplate, but adds a simple folder structure and a very lightweight base development workflow (based on [Grunt](https://gruntjs.com)) that allows for expansion to include aditional features and additional steps to your build pipeline.
+This starter/seed project draws heavily from the good old proven [HTML5 Boilerplate](https://html5boilerplate.com) but pairs it with [Parcel](https://parceljs.org) for a quick HTML development setup, and also aligned with the current web development requirements.
 
 With this starter/seed you will get:
 
-- A modern template based on [HTML5 Boilerplate](https://html5boilerplate.com).
-- A sensible folder structure with a `dist` folder and a minimal build process, that clearly separates all the the config and dev workflow files, `npm_modules`/dependencies, etc, from the files that need to be deployed.
+- A modern HTML starter template based on [HTML5 Boilerplate](https://html5boilerplate.com).
+- A sensible folder structure with `src`/`dist` folders allowing for proper separation of all the the config, dev workflow files, `npm_modules`/dependencies, etc, and the built files that need to be deployed.
+- Parcel build optimization, etc.
 - A deployment command/task that works through FTP/FTPS or SFTP.
 - Configurable variables via [dotenv](https://github.com/motdotla/dotenv)/`.env` file.
 
@@ -62,6 +59,10 @@ The folder of all the build files to be served by the local/dev built-in server.
 #### Gruntfile.js
 
 [Grunt](https://gruntjs.com/) configuration file providing tasks for the development workflow—check the list of available tasks below.
+
+## Why Parcel?
+
+Nowadays, HTML5 Boilerplate ships with a base [webpack](https://webpack.js.org/) configuration.
 
 # Usage
 

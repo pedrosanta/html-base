@@ -19,6 +19,7 @@
     "grunt-ftps-deploy": "github:dYb/grunt-ftps-deploy",
     "grunt-ga-replace": "^1.0.2",
     "grunt-sftp-deploy": "^0.2.5",
-    "html5-boilerplate": "^8.0.0"
+    "html5-boilerplate": "^8.0.0",
+    "parcel": "^2.12.0"
   }
 }
