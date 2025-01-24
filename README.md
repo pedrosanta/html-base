@@ -12,7 +12,7 @@ A pragmatic starter/seed project for simple static HTML projects/pages/sites.
 
 # Purpose
 
-This starter/seed project draws heavily from the good old proven [HTML5 Boilerplate](https://html5boilerplate.com) but pairs it with [Parcel](https://parceljs.org) for a quick HTML development setup, and also aligned with the current web development requirements.
+A starter/seed project drawing heavily from the good old proven [HTML5 Boilerplate](https://html5boilerplate.com) but pairing it with [Parcel](https://parceljs.org) for a quick HTML development setup, and aligned with the current web development requirements.
 
 With this starter/seed you will get:
 
