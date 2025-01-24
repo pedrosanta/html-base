@@ -60,7 +60,7 @@ The main/default [dotenv](https://github.com/motdotla/dotenv) file. See how you 
 
 Currently [HTML5 Boilerplate ships with a base webpack configuration](https://github.com/h5bp/html5-boilerplate/issues/2650) that provides a development server, builds the code for development and production, but in terms of build pipeline still seems a bit too bare.
 
-I've been using Parcel lately with good results: it works out-of-thebox, it's fully featured for web development, and it's extendable if you need to tweak/modify some particular configuration on the build pipeline.
+I've been using Parcel lately with good results: it works out-of-the-box, it's fully featured for web development, and it's extendable if you need to tweak/modify some particular configuration on the build pipeline.
 
 This isn't set in stone though, the simplicity of the current webpack configuration of HTML5 Boilerplate is a plus for a more bare starter, and [Vite](https://vitejs.dev) also seems like a great option. For now, I'll be sticking to Parcel unless I see the benefit of revisiting this or if I face, meanwhile, significant hurdles using Parcel.
 
