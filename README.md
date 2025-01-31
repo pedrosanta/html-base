@@ -1,6 +1,6 @@
 # html-base
 
-A pragmatic and scalable starter/seed project aimed mostly at simple static HTML pages and sites.
+A pragmatic starter/seed project for simple static HTML projects/pages/sites.
 
 **Contents:**
 
@@ -12,56 +12,61 @@ A pragmatic and scalable starter/seed project aimed mostly at simple static HTML
 
 # Purpose
 
-To start a new static HTML site or page one probably shouldn't need to go further than the good old proven and amazing [HTML5 Boilerplate](https://html5boilerplate.com).
-
-But with the latter consisting mostly of ready to use static files, it lacks as a basis for a working development workflow, which, given the modern web development requirements, one might sometimes need to add CSS pre-processing, bundling, deployment, among others.
-
-This starter/seed project draws heavily from HTML5 Boilerplate, but adds a simple folder structure and a very lightweight base development workflow (based on [Grunt](https://gruntjs.com)) that allows for expansion to include aditional features and additional steps to your build pipeline.
+A starter/seed project drawing heavily from the good proven [HTML5 Boilerplate](https://html5boilerplate.com) and pairing it with [Parcel](https://parceljs.org) for a quick HTML development setup, aligned with current web development requirements.
 
 With this starter/seed you will get:
 
-- A modern template based on [HTML5 Boilerplate](https://html5boilerplate.com).
-- A sensible folder structure with a `dist` folder and a minimal build process, that clearly separates all the the config and dev workflow files, `npm_modules`/dependencies, etc, from the files that need to be deployed.
+- A modern HTML starter template based on [HTML5 Boilerplate](https://html5boilerplate.com).
+- Easy but robust dependency and asset bundling with [Parcel](https://parceljs.org).
+- A sensible folder structure with `src`/`dist` folders allowing for proper separation of all the the config, dev workflow files, `npm_modules`/dependencies, etc, and the built files that need to be deployed.
+- Configurable variables via [Parcel support for dotenv/`.env` files](https://parceljs.org/features/node-emulation/#.env-files).
 - A deployment command/task that works through FTP/FTPS or SFTP.
-- Configurable variables via [dotenv](https://github.com/motdotla/dotenv)/`.env` file.
 
 ## Folder structure
 
 ```
 .
-├── .tmp/
-├── app/
+├── .parcel-cache/
 ├── dist/
+├── dist.dev/
 ├── node_modules/
+├── src/
 ├── .editorconfig
-├── .env.example
-├── Gruntfile.js
+├── .env
 └── package.json
 ```
 
-#### app/
-
-Where all of your source files go.
-
 #### dist/
 
-The folder of all the built files that can be pushed and served by a remote/production server.
+The folder of all the built files that can be pushed and served by a remote/production server. (**Note:** This folder isn't git ignored, [see more below](#why-commit-the-dist-folder).)
 
-#### .tmp/
+#### dist.dev/
 
-The folder of all the build files to be served by the local/dev built-in server.
+The folder of all the build files to be served by the local/Parcel development server. (Folder is git ignored.)
+
+#### src/
+
+Where all of your source files go.
 
 #### .editorconfig
 
 [EditorConfig](https://editorconfig.org) file, to help maintain indentation consistency. ([Check the site](https://editorconfig.org/#download) to see how to enable on your code editor.)
 
-#### .env.example
+#### .env
 
-[dotenv](https://github.com/motdotla/dotenv) example file. Copy this file into a `.env` file and adjust the environment variables. (This is mostly an example usage of dotenv functionality to store and use environment variables on the build tasks/pipeline for you to expand, for now it only holds a Google Analytics variable.)
+The main/default [dotenv](https://github.com/motdotla/dotenv) file. See how you can leverage this file (and dotenv) with Parcel [on the documentation](https://parceljs.org/features/node-emulation/#.env-files). Add local/development git ignored overrides to an `.env.local` file or any other appropriate `env.*.local` files. (The `.env` file already includes variables needed for deployment that you should edit.) **Important note:** Avoid adding secret variables to this file/committing secret variables. At the very least, add them locally to `.env.local`/`.env.*.local` files or ideally have a better/established process to manage secrets.
 
-#### Gruntfile.js
+## Why Parcel?
 
-[Grunt](https://gruntjs.com/) configuration file providing tasks for the development workflow—check the list of available tasks below.
+Currently [HTML5 Boilerplate ships with a base webpack configuration](https://github.com/h5bp/html5-boilerplate/issues/2650) that provides a development server, builds the code for development and production, but in terms of build pipeline still seems a bit too bare.
+
+I've been using Parcel lately with good results: it works out-of-the-box, it's fully featured for web development, and it's extendable if you need to tweak/modify some particular configuration on the build pipeline.
+
+This isn't set in stone though, the simplicity of the current webpack configuration of HTML5 Boilerplate is a plus for a more bare starter, and [Vite](https://vitejs.dev) also seems like a great option. For now, I'll be sticking to Parcel unless I see the benefit of revisiting this or if I face, meanwhile, significant hurdles using Parcel.
+
+## Why commit the dist folder?
+
+(Explain.)
 
 # Usage
 
